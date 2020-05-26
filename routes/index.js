@@ -1,9 +1,11 @@
 const express = require('express');
+
 const router = express.Router();
 
+// eslint-disable-next-line no-unused-vars
 router.get('/', (req, res, next) => {
-    res.json({
-        "message" : "Hello World"
-    });
+  res.json({
+    message: 'Hello World',
+  });
 });
 module.exports = router;
