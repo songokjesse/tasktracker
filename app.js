@@ -10,6 +10,7 @@ const config = {
   appSession: {
     secret: process.env.AUTH0_SECRET,
   },
+  // baseURL: 'https://myjob-tracker.herokuapp.com',
   baseURL: 'http://localhost:3000',
   clientID: process.env.AUTH0_CLIENTID,
   issuerBaseURL: 'https://dev-cybs19sl.auth0.com',
