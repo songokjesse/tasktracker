@@ -1,6 +1,7 @@
 const express = require('express');
 // eslint-disable-next-line import/no-unresolved
 const UserRoutes = require('./user');
+const AuthRoutes = require('./authentication');
 
 const router = express.Router();
 //
@@ -13,5 +14,6 @@ router.get('/', (req, res, next) => {
 
 
 router.use('/api/v1/users', UserRoutes);
+router.use('/api/v1/auth', AuthRoutes);
 
 module.exports = router;
